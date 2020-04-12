@@ -20,8 +20,6 @@ while(<FILE>) {
             $mei = $2;
             $seimei = "$1 $2";
       } elsif (/ADR;type=HOME.*?:;(.*?);(.*?);(.*?);(.*?);(.*?);.*$/) {
-#        ADR;type=HOME;type=pref:;;;小金井市関野町2-2-7-105;;184-0001;
-#  item1.ADR;type=HOME;type=pref:;サンフィールド;205貝沢町925-1;高崎市;;370-0042;
             $pc = $5;
             $jusho = "$4$3$2$1";
       } elsif (/^END:VCARD$/) {
